@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivek Bhattacharya - Resume</title>
+  <style>
+    /* ===== Base ===== */
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: #f7f9fa;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+    }
+
+    .resume-container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 8px;
+      padding: 32px 40px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    }
+
+    .name { font-size: 28px; font-weight: 700; margin: 0; letter-spacing: 1px; }
+    .title { font-size: 14px; color: #333; margin: 4px 0 8px; font-weight: 600; }
+    .contact { font-size: 13px; color: #444; line-height: 1.6; }
+    .contact a { color: #000; text-decoration: none; }
+
+    hr { border: none; border-top: 1px solid #e3e6ea; margin: 16px 0 20px; }
+
+    .section { margin-bottom: 18px; }
+    .section-title {
+      font-size: 14px; font-weight: 700; letter-spacing: .5px;
+      margin-bottom: 8px; text-transform: uppercase;
+    }
+
+    .card { margin-bottom: 10px; }
+    .card-title { font-weight: 700; font-size: 14px; }
+    .card-subtitle { font-size: 13px; color: #333; margin: 2px 0 4px; }
+    .card-date { color: #666; font-size: 12px; }
+
+    ul { margin: 6px 0 0 18px; padding: 0; font-size: 13px; }
+    li { margin-bottom: 4px; }
+
+    .skills { font-size: 13px; line-height: 1.8; }
+
+    /* ===== Print (Clean, ATS-friendly) ===== */
+    @media print {
+      @page { size: A4; margin: 12mm; }
+      body { background: #fff; }
+      .resume-container {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+      }
+      .section, .card { page-break-inside: avoid; break-inside: avoid; }
+      a { color: #000; text-decoration: none; }
+    }
+
+    /* ===== Mobile ===== */
+    @media (max-width: 600px) {
+      .resume-container { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+
+    <h1 class="name">VIVEK BHATTACHARYA</h1>
+    <div class="title">B.Tech Computer Science Student | MERN Stack Developer</div>
+    <div class="contact">
+      <a href="mailto:vivekbhattacharya01@gmail.com">vivekbhattacharya01@gmail.com</a> | +91-8178642938 |
+      <a href="https://www.linkedin.com/in/vivek-bhattacharya-9a661528a/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/vivekbhattacharya01-gif" target="_blank">GitHub</a>
+    </div>
+
+    <hr>
+
+    <div class="section">
+      <div class="section-title">Professional Summary</div>
+      <ul>
+        <li>Computer Science undergraduate specializing in MERN stack and modern frontend development</li>
+        <li>Strong foundation in React.js, JavaScript, responsive UI engineering, and API integration</li>
+        <li>Experience building production-ready web applications with performance and UX focus</li>
+        <li>Collaborative team player with hackathon and project delivery experience</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Technical Skills</div>
+      <div class="skills">
+        <b>Languages:</b> JavaScript, Python, HTML5, CSS3<br>
+        <b>Frontend:</b> React.js, Tailwind CSS, Responsive Design, UI/UX, SPA Development<br>
+        <b>Backend:</b> Node.js, REST API Integration<br>
+        <b>Tools:</b> GitHub, VS Code, Netlify, Chrome DevTools
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Projects</div>
+
+      <div class="card">
+        <div class="card-title"><a href="https://agency-ai-758.netlify.app/" target="_blank">Agency-AI — AI Powered Agency Website (React.js)</a></div>
+        <ul>
+          <li>Developed a multi-section production-grade agency website using <b>React.js component architecture</b> with reusable components, <b>props-based data flow</b>, and modular structure</li>
+          <li>Implemented <b>smooth scrolling</b>, animations, and fully <b>responsive layouts</b> optimized for desktop, tablet, and mobile devices<br>
+          <b>Tech Stack:</b> React.js, JavaScript, Tailwind CSS, Responsive Design, Component Architecture</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title"><a href="https://vivek-coinpulse.netlify.app/" target="_blank">CoinPulse — Real-Time Cryptocurrency Tracker</a></div>
+        <ul>
+          <li>Built live crypto tracking dashboard using <b>CoinGecko API</b> with real-time updates and engineered <b>responsive UI</b> using Flexbox and media queries</li>
+          <li>Improved page load performance by <b>20%</b> through optimized rendering techniques<br>
+          <b>Tech Stack:</b> JavaScript, HTML5, CSS3, REST API, Responsive Design</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title"><a href="https://vivek-codewave.netlify.app/" target="_blank">CodeWave — QR Code Generator Web App</a></div>
+        <ul>
+          <li>Developed QR generator using <b>JavaScript</b> and API integration</li>
+          <li>Designed accessible cross-device interface used by <b>50+ users</b> during testing</li>
+          <li>Improved user satisfaction by <b>30%</b> with clean and intuitive UI</li>
+          <li><b>Tech Stack:</b> JavaScript, HTML5, CSS3, API Integration, UI/UX</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-title">Achievements & Interests</div>
+      <ul>
+        <li>Participant — Smart India Hackathon (SIH); Built and deployed multiple portfolio-grade web applications</li>
+        <li>UI/UX design focus; Continuous learning through documentation and hands-on projects</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Education</div>
+
+      <div class="card">
+        <div class="card-title">B.Tech in Computer Science</div>
+        <div class="card-subtitle">Raj Kumar Goel Institute of Technology and Management, Ghaziabad</div>
+        <div class="card-date">Aug 2023 – Present</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Senior Secondary Education</div>
+        <div class="card-subtitle">JD Academy, Ghaziabad</div>
+        <div class="card-date">2022 – 2023</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Higher Secondary Education (CBSE)</div>
+        <div class="card-subtitle">DAV Public School, Ghaziabad</div>
+        <div class="card-date">2020 – 2021</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
