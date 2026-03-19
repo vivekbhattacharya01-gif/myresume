@@ -1,177 +1,294 @@
-/* ===== Base ===== */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
     background: #f4f6fb;
     margin: 0;
     padding: 0;
-    color: #222;
+    color: #1a1a1a;
+    line-height: 1.4;
 }
 
+/* Container */
 .resume-container {
-    max-width: 820px;
-    margin: 32px auto;
+    max-width: 800px;
+    margin: 20px auto;
     background: #ffffff;
-    padding: 28px 32px;
+    padding: 24px 28px;
     border-radius: 6px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    box-shadow: none;
 }
 
-/* ===== Header ===== */
-.header {
-    display: flex;
-    align-items: center;
-    gap: 22px;
-    padding-bottom: 12px;
-    margin-bottom: 16px;
-    border-bottom: 1px solid #ddd;
-}
-
-.avatar {
-    width: 88px;
-    height: 88px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
+/* Header */
 .name {
-    font-size: 26px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 800;
     margin: 0;
-    letter-spacing: .5px;
 }
 
 .title {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
-    margin: 4px 0 8px;
+    margin: 4px 0 6px;
 }
 
 .contact {
-    font-size: 13px;
-    color: #444;
+    font-size: 12.5px;
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
+    border-bottom: 1px solid #d1d5db; /* softer line */
+    padding-bottom: 6px;
+    margin-bottom: 6px;
 }
 
-/* ===== Sections ===== */
+/* Sections */
 .section {
-    margin-bottom: 18px;
+    margin-top: 14px;
 }
 
 .section-title {
-    font-size: 14px;
+    font-size: 12.5px;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     text-transform: uppercase;
-    letter-spacing: .5px;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 2px;
 }
 
-.section-content {
-    font-size: 13px;
-    line-height: 1.6;
-}
-
-/* ===== Project / Education Cards ===== */
+/* Cards */
 .card {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
 .card-title {
     font-weight: 700;
-    font-size: 13.5px;
-}
-
-.card-subtitle {
     font-size: 13px;
-    color: #333;
-    margin: 2px 0 4px;
 }
 
-.card-date {
-    font-size: 12px;
-    color: #666;
-}
-
-/* ===== Lists ===== */
+/* Lists */
 ul {
-    margin: 6px 0 0 18px;
+    margin: 4px 0 0 16px;
     padding: 0;
-    font-size: 13px;
+    font-size: 12.5px;
 }
 
 li {
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
-/* ===== Links ===== */
-a {
-    color: #000;
+/* Skills */
+.skills {
+    font-size: 12.5px;
+    line-height: 1.5;
+}
+
+/* Links */
+.contact a,
+.card-title a {
+    color: #1d4ed8;
+    font-weight: 600;
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-/* ===== Skills ===== */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 10px;
-}
-
-.skills-card {
-    padding: 6px 8px;
-}
-
-.skills-title {
-    font-size: 13px;
-    font-weight: 700;
-    margin-bottom: 6px;
-}
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-}
-
-.skill {
-    font-size: 12px;
-}
-
-/* ===== Print (ATS Critical) ===== */
+/* PRINT FIX (MOST IMPORTANT) */
 @media print {
     @page {
         size: A4;
-        margin: 14mm;
+        margin: 10mm;
     }
 
     body {
         background: #fff;
+        font-size: 12px;
     }
 
     .resume-container {
-        box-shadow: none;
-        margin: 0;
         padding: 0;
+        margin: 0;
         max-width: 100%;
     }
 
-    a {
-        color: #000;
-        text-decoration: none;
+    .section {
+        margin-top: 10px;
+    }
+
+    li {
+        margin-bottom: 1px;
     }
 }
 
-/* ===== Mobile ===== */
-@media (max-width: 600px) {
-    .resume-container {
-        padding: 16px;
-    }
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+
+/* body {
+   font-family: Arial, Helvetica, sans-serif;
+   background: #f4f6fb;
+   margin: 0;
+   padding: 0;
+   color: #222;
 }
+
+
+.resume-container {
+   max-width: 820px;
+   margin: 32px auto;
+   background: #ffffff;
+   padding: 28px 32px;
+   border-radius: 6px;
+   box-shadow: 0 2px 10px rgba(123, 116, 116, 0);
+}
+
+
+.header {
+   display: flex;
+   align-items: center;
+   gap: 22px;
+   padding-bottom: 12px;
+   margin-bottom: 16px;
+   border-bottom: 1px solid #ddd;
+}
+
+.avatar {
+   width: 88px;
+   height: 88px;
+   border-radius: 50%;
+   object-fit: cover;
+}
+
+.name {
+   font-size: 26px;
+   font-weight: 700;
+   margin: 0;
+   letter-spacing: .5px;
+}
+
+.title {
+   font-size: 14px;
+   font-weight: 600;
+   margin: 4px 0 8px;
+}
+
+.contact {
+   font-size: 13px;
+   color: hsl(214, 89%, 50%);
+   display: flex;
+   flex-wrap: wrap;
+   gap: 12px;
+}
+
+
+.section {
+   margin-bottom: 18px;
+}
+
+.section-title {
+   font-size: 14px;
+   font-weight: 700;
+   margin-bottom: 8px;
+   text-transform: uppercase;
+   letter-spacing: .5px;
+}
+
+.section-content {
+   font-size: 13px;
+   line-height: 1.6;
+}
+
+
+.card {
+   margin-bottom: 10px;
+}
+
+.card-title {
+   font-weight: 700;
+   font-size: 13.5px;
+}
+
+.card-subtitle {
+   font-size: 13px;
+   color: #333;
+   margin: 2px 0 4px;
+}
+
+.card-date {
+   font-size: 12px;
+   color: #666;
+}
+
+
+ul {
+   margin: 6px 0 0 18px;
+   padding: 0;
+   font-size: 13px;
+}
+
+li {
+   margin-bottom: 4px;
+}
+
+a {
+   color: #000;
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+.skills-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+   gap: 10px;
+}
+
+.skills-card {
+   padding: 6px 8px;
+}
+
+.skills-title {
+   font-size: 13px;
+   font-weight: 700;
+   margin-bottom: 6px;
+}
+
+.skills-list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 6px;
+}
+
+.skill {
+   font-size: 12px;
+}
+
+
+@media print {
+   @page {
+       size: A4;
+       margin: 14mm;
+   }
+
+   body {
+       background: #fff;
+   }
+
+   .resume-container {
+       box-shadow: none;
+       margin: 0;
+       padding: 0;
+       max-width: 100%;
+   }
+
+   a {
+       color: #000;
+       text-decoration: none;
+   }
+}
+
+
+@media (max-width: 600px) {
+   .resume-container {
+       padding: 16px;
+   }
+   .header {
+       flex-direction: column;
+       align-items: flex-start;
+   }
+} */

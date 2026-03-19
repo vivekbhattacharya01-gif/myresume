@@ -4,67 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vivek Bhattacharya - Resume</title>
-  <style>
-    /* ===== Base ===== */
-    html, body { margin: 0; padding: 0; }
-    body {
-      background: #f7f9fa;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #222;
-    }
 
-    .resume-container {
-      max-width: 800px;
-      margin: 40px auto;
-      background: #fff;
-      border-radius: 8px;
-      padding: 32px 40px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-    }
-
-    .name { font-size: 28px; font-weight: 700; margin: 0; letter-spacing: 1px; }
-    .title { font-size: 14px; color: #333; margin: 4px 0 8px; font-weight: 600; }
-    .contact { font-size: 13px; color: #444; line-height: 1.6; }
-    .contact a { color: #000; text-decoration: none; }
-
-    hr { border: none; border-top: 1px solid #e3e6ea; margin: 16px 0 20px; }
-
-    .section { margin-bottom: 18px; }
-    .section-title {
-      font-size: 14px; font-weight: 700; letter-spacing: .5px;
-      margin-bottom: 8px; text-transform: uppercase;
-    }
-
-    .card { margin-bottom: 10px; }
-    .card-title { font-weight: 700; font-size: 14px; }
-    .card-subtitle { font-size: 13px; color: #333; margin: 2px 0 4px; }
-    .card-date { color: #666; font-size: 12px; }
-
-    ul { margin: 6px 0 0 18px; padding: 0; font-size: 13px; }
-    li { margin-bottom: 4px; }
-
-    .skills { font-size: 13px; line-height: 1.8; }
-
-    /* ===== Print (Clean, ATS-friendly) ===== */
-    @media print {
-      @page { size: A4; margin: 12mm; }
-      body { background: #fff; }
-      .resume-container {
-        box-shadow: none;
-        margin: 0;
-        padding: 0;
-        max-width: 100%;
-      }
-      .section, .card { page-break-inside: avoid; break-inside: avoid; }
-      a { color: #000; text-decoration: none; }
-    }
-
-    /* ===== Mobile ===== */
-    @media (max-width: 600px) {
-      .resume-container { padding: 16px; }
-    }
-  </style>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="resume-container">
 
@@ -76,7 +20,7 @@
       <a href="https://github.com/vivekbhattacharya01-gif" target="_blank">GitHub</a>
     </div>
 
-    <hr>
+    
 
     <div class="section">
       <div class="section-title">Professional Summary</div>
@@ -94,7 +38,7 @@
         <b>Languages:</b> JavaScript, Python, HTML5, CSS3<br>
         <b>Frontend:</b> React.js, Tailwind CSS, Responsive Design, UI/UX, SPA Development, Figma<br>
         <b>Backend:</b> Node.js, REST API Integration<br>
-        <b>Tools:</b> GitHub, VS Code, Netlify, Chrome DevTools
+        <b>Tools:</b> GitHub, VS Code, Netlify, Chrome DevTools, Figma <br>
       </div>
     </div>
 
@@ -131,11 +75,20 @@
 
     </div>
 
+ <!-- ACHIEVEMENTS & CERTIFICATIONS (MERGED) -->
     <div class="section">
-      <div class="section-title">Achievements & Interests</div>
+      <div class="section-title">Achievements & Certifications</div>
       <ul>
-        <li>Participant — Smart India Hackathon (SIH); Built and deployed multiple portfolio-grade web applications</li>
-        <li>UI/UX design focus; Continuous learning through documentation and hands-on projects</li>
+        <li>Participant — Smart India Hackathon (SIH); Built multiple portfolio-level web applications</li>
+        <li>
+          Web Exploit Hunting & Bug Bounty Internship — EduSkills (AICTE), Oct–Dec 2025
+          <a href="https://drive.google.com/file/d/1WtIs0bqc2XAlK8bL47b2jC8LrXY9NWc-/view?usp=sharing" target="_blank">🔗</a>
+        </li>
+        <li>
+          Generative AI — NASSCOM Skill Development Program, Mar 2026
+          <a href="https://drive.google.com/file/d/1i5MsSEsgVp0_h6ychp4GGZkM8Xd9guUY/view?usp=sharing" target="_blank">🔗</a>
+        </li>
+        <!-- <li>Strong interest in UI/UX design and continuous learning</li> -->
       </ul>
     </div>
 
@@ -159,8 +112,18 @@
         <div class="card-subtitle">DAV Public School, Ghaziabad</div>
         <div class="card-date">2020 – 2021</div>
       </div>
+
     </div>
 
   </div>
+
+  <div class="section">
+    <div class="section-title">Extracurricular & Interests</div>
+    <ul>
+        <li>Building real-world web applications with focus on performance and UI</li>
+        <li>Exploring startup ecosystems and scalable product development</li>
+        <li>Continuous self-learning in JavaScript, React, and backend systems</li>
+    </ul>
+</div>
 </body>
 </html>
